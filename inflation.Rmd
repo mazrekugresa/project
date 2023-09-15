@@ -2,7 +2,7 @@
 title: "Inflation Data"
 author: "Aaron Peikert"
 date: "`r Sys.Date()`"
-output: html_document
+output: pdf_document
 repro:
   packages:
     - here
@@ -14,11 +14,6 @@ repro:
   data:
     - data/raw/inflation.rds
 ---
-
-```{r}
-repro::automate()
-repro::use_gha_docker()
-```
 
 
 ```{r setup, include=FALSE}

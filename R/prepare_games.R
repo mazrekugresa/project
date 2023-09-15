@@ -26,3 +26,10 @@ usethis::use_git_config(
   init.defaultBranch = "main") # <-- not necessary but kinder than 'master'
 
 usethis::use_git()
+
+usethis::create_github_token(description = "Token for Repro Workshop 2023 Test")
+
+gitcreds::gitc
+
+
+usethis::use_github()

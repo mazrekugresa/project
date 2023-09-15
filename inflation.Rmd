@@ -15,6 +15,12 @@ repro:
     - data/raw/inflation.rds
 ---
 
+```{r}
+repro::automate()
+repro::use_gha_docker()
+```
+
+
 ```{r setup, include=FALSE}
 repro::automate_load_packages()
 repro::automate_load_scripts()
@@ -64,6 +70,13 @@ with(mtcars, plot(hp, mpg))
 
 We have 32 cars.
 
+hello
+
+
+jjj
+
+
 erfgesrdg
+
 
 

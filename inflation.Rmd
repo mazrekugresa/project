@@ -49,9 +49,15 @@ inflation %>%
   pivot_longer(c(expectation, perception)) %>% 
   ungroup() %>% 
   ggplot() +
-  geom_line(aes(date, value, color = name)) +
+  geom_line(aes(date, value, color = name)) + theme_minimal() +
+  ylab("subjective inflation in %-points") +
+  labs(color = "") +
+  theme(legend.position = c(.1, .9)) +
   NULL
 ```
+
+
+
 ```{r}
 with(mtcars, plot(hp, mpg))
 ```
@@ -59,3 +65,5 @@ with(mtcars, plot(hp, mpg))
 We have 32 cars.
 
 erfgesrdg
+
+
